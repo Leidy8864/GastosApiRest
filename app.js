@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://heroku_99bzlsxz:heroku_99bzlsxz@ds135217.mlab.com:35217/heroku_99bzlsxz', { useNewUrlParser: true });
+mongoose.connect('mongodb://leidy8864:leidy123@ds135217.mlab.com:35217/heroku_99bzlsxz', { useNewUrlParser: true });
 
 require('./models/gastos');
 
