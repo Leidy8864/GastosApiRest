@@ -32,8 +32,9 @@ router.post('/gasto', function(req, res, next){
 router.put('/gasto/:id', function(req, res){
   Gastos.findById(req.params.id, function(err, gasto){
       gasto.nombre = req.body.nombre;
-      gasto.prioridad = req.body.prioridad;
-      
+      gasto.apellidos = req.body.apellidos;
+      gasto.monto = req.body.monto;
+      gasto.tipoGasto = req.body.tipoGasto;
       gasto.save(function(err){
           if(err){res.send(err)}
           
